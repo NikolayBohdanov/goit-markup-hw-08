@@ -1,0 +1,11 @@
+/* Header */
+.header {
+    border-bottom: 1px solid #ececec;
+
+&__container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+

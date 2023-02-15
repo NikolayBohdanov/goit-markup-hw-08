@@ -1,0 +1,36 @@
+.conditions {
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__checkbox {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        position: absolute;
+    }
+
+    &__icon {
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+        margin-right: 8px;
+        border: 2px solid var(--color-secondary);
+        border-radius: 2px;
+    }
+
+    &__checkbox:checked+&__icon {
+        background: var(--color-blue);
+        background-image: url(../images/icon-check.svg);
+        background-size: contain;
+        background-position: center;
+        background-origin: border-box;
+        border: 1px solid var(--color-blue);
+    }
+
+    &__label {
+        color: var(--color-blue);
+    }
+}
