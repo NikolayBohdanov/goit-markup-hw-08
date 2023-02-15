@@ -1,3 +1,3 @@
-# go-it-lesson7
+# go-it-lesson8
 
-My seventh home work for GoIt (add SASS & BEM).
+My seventh home work for GoIt (add mobile & tablet versions).
