@@ -15,7 +15,10 @@
 }
 
 .form {
-    display: flex;
+display: block;
+    @media screen and (min-width:$tablet) {
+            display: flex;
+    }
 
     &__input {
         min-width: 358px;

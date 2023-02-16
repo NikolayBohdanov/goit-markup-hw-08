@@ -11,9 +11,12 @@
     }
 
     &__list {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+ display: block;
+        @media screen and (min-width:$tablet) {
+                display: flex;
+                    align-items: center;
+                    justify-content: center;
+        }
     }
 
     &__item:not(:last-child) {

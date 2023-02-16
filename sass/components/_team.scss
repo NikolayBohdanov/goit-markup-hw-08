@@ -12,7 +12,10 @@
     }
 
     &__list {
-        display: flex;
+        display: block;
+        @media screen and (min-width:$tablet) {
+            display: flex;
+        }
     }
 
     &__item {
