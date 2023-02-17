@@ -1,5 +1,6 @@
 /* footer-form */
 .mail {
+    text-align: center;
     &__text {
         font-family: "Roboto";
         font-style: normal;
@@ -21,18 +22,26 @@ display: block;
     }
 
     &__input {
-        min-width: 358px;
-        margin-right: 10px;
+        width: 100%;
+        // margin-right: 10px;
+        height: 50px;
         padding-left: 16px;
+        margin-bottom: 20px;
 
         font-size: 16px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 4px;
         color: var(--color-primary);
         background-color: transparent;
+        @media screen and (min-width:$mobile) {
+            max-width: 450px;
+            
+        }
     }
 
     &__button {
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         align-items: center;
         font-family: inherit;

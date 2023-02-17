@@ -1,11 +1,12 @@
 .address {
-
+  text-align: center;
   &__list {
     font-style: normal;
+    margin-bottom: 60px;
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
 
   &__link {
