@@ -1,9 +1,28 @@
 .navigation {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding-top: 16px;
     padding-bottom: 16px;
-
+    &__button{
+        cursor: pointer;
+        display: inline-flex;
+        border: none;
+        margin: 0;
+        padding: 0px;
+        background-color: transparent;
+    }
+    &__menu{
+    }
+    &__close{
+        display: none;
+    }
+    &__button.is-open &__close{
+        display:block ;
+    }
+    &__button.is-open &__menu {
+        display: none;
+    }
     &__list {
         margin-left: 93px;
         display: flex;

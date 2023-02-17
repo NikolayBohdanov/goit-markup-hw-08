@@ -23,9 +23,27 @@
       <!-- Навигация -->
       <div class="container header__container">
         <nav class="navigation">
-          <a href="./index.html" class="logo link">
+          <a href="./index.html" class="logo header--logo link">
             Web<span class="logo__text--dark">Studio</span>
           </a>
+          <button type="button" class="navigation__button" data-menu>
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="navigation__menu"
+                data-menu-open
+                href="./images/sprite.svg#icon-menu"
+              ></use>
+              <use
+                class="navigation__close"
+                data-menu-close
+                href="./images/sprite.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
           <ul class="navigation__list list">
             <li class="navigation__item">
               <a
