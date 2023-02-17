@@ -2,7 +2,7 @@
 .hero {
     background-color: var(--color-hero-back);
     padding-top: 118px;
-    padding-bottom: 188px;
+    padding-bottom: 118px;
     text-align: center;
 
     @media screen and (min-width:$desktop) {
@@ -36,8 +36,8 @@
 
     &__title {
         font-weight: 900;
-        font-size: 44px;
-        line-height: calc(60 / 44);
+        font-size: 26px;
+        line-height: calc(42 / 26);
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
@@ -45,11 +45,12 @@
         margin-bottom: 30px;
 
         @media screen and (min-width:$tablet) {
-            
+
         }
 
         @media screen and (min-width:$desktop) {
-
+            font-size: 44px;
+            line-height: calc(60 / 44);
         }
     }
 
