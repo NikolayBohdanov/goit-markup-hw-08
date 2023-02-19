@@ -8,6 +8,7 @@
         @media screen and (min-width:$desktop) {
             display: flex;
             align-items: baseline;
+
         }
     }
 
@@ -15,23 +16,37 @@
         margin-bottom: 20px;
         text-align: center;
 
+        @media screen and (min-width:$desktop) {
+            text-align: start;
+        }
+
     }
 
     &__control {
         // margin-right: 96px;
     }
-    &__box{
+
+    &__box {
         display: flex;
         justify-content: space-around;
-        margin-bottom: 60px ;
-    }
-    &__position{
+        margin-bottom: 60px;
 
+        @media screen and (min-width:$desktop) {
+            margin-right: 93px;
+            align-items: baseline;
+            margin-bottom: 0px;
+
+        }
     }
 
-    &__links {
-        // margin-right: 93px;
+    &__position {
+        @media screen and (min-width:$desktop) {
+            margin-right: 70px;
+
+        }
     }
+
+    &__links {}
 
     &__text {
         font-family: "Roboto";
@@ -46,7 +61,12 @@
         text-align: center;
         margin-bottom: 20px;
     }
-    &__socials-list{
+
+    &__socials-list {
         margin-bottom: 60px;
+        @media screen and (min-width:$desktop) {
+            margin-bottom: 0px;
+            
+        }
     }
 }

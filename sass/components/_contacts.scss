@@ -38,6 +38,11 @@
 
     &__item:not(:last-child) {
         margin-bottom: 10px;
+        @media screen and (min-width:$desktop) {
+            margin-right: 30px;
+            margin-bottom: 0px;
+            
+        }
     }
 
     &__item+&__item {

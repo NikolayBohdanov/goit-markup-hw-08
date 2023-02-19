@@ -1,15 +1,25 @@
 // Filter
 .filter {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    @media screen and (min-width:$desktop) {
+            margin-bottom: 50px;
+    }
+
 
     &__list {
         display: flex;
+        justify-content:flex-start;
+        flex-wrap: wrap;
+        @media screen and (min-width:$tablet) {
         justify-content: center;
+            
+        }
 
     }
 
     &__item:not(:last-child) {
         margin-right: 8px;
+        margin-bottom: 15px;
     }
 
     &__buttons {

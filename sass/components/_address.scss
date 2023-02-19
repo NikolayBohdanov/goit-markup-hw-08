@@ -1,5 +1,9 @@
 .address {
   text-align: center;
+  @media screen and (min-width:$desktop) {
+    text-align: start;
+    
+  }
   &__list {
     font-style: normal;
     @media screen and (max-width:767px) {

@@ -18,6 +18,9 @@
             // max-width: 354px;
             flex-basis: calc((100% - 30px) / 2)
         }
+        @media screen and (min-width:$desktop) {
+            flex-basis: calc((100% - 90px) / 4)
+        }
     }
 
     &__item:not(:last-child) {

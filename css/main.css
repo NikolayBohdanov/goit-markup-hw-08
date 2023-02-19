@@ -153,6 +153,11 @@ img {
 .address {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .address {
+    text-align: start;
+  }
+}
 .address__list {
   font-style: normal;
 }
@@ -378,6 +383,12 @@ img {
 .contacts__item:not(:last-child) {
   margin-bottom: 10px;
 }
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+}
 .contacts__link:hover, .contacts__link:focus {
   color: var(--color-blue);
   fill: var(--color-blue);
@@ -439,6 +450,12 @@ img {
         flex-basis: calc((100% - 60px) / 3);
   }
 }
+@media screen and (min-width: 1200px) {
+  .customers__item {
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
+  }
+}
 .customers__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,24 +480,32 @@ img {
 }
 
 /* Техника Сетки через отрицательные марджины */
-.examples__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+@media screen and (min-width: 768px) {
+  .examples__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 .examples__item {
-  -ms-flex-preferred-size: calc((100% - 90px) / 3);
-      flex-basis: calc((100% - 90px) / 3);
-  margin-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
   margin-bottom: 30px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .examples__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .examples__item:hover, .examples__item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -564,6 +589,12 @@ img {
         flex-basis: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1200px) {
+  .features__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
+}
 .features__item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -597,18 +628,33 @@ img {
 }
 
 .filter {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
 }
 .filter__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .filter__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .filter__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 .filter__buttons {
   cursor: pointer;
@@ -661,6 +707,11 @@ img {
             flex-direction: column;
   }
 }
+@media screen and (min-width: 1200px) {
+  .mail {
+    text-align: start;
+  }
+}
 
 .form {
   display: block;
@@ -674,6 +725,14 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 .form__input {
@@ -696,6 +755,13 @@ img {
   .form__input {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__input {
+    margin-bottom: 0px;
+    margin-right: 10px;
+    min-width: 358px;
   }
 }
 .form__button {
@@ -750,6 +816,11 @@ img {
   margin-bottom: 20px;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    text-align: start;
+  }
+}
 .footer__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -757,6 +828,20 @@ img {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    margin-right: 93px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__position {
+    margin-right: 70px;
+  }
 }
 .footer__text {
   font-family: "Roboto";
@@ -772,6 +857,11 @@ img {
 }
 .footer__socials-list {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__socials-list {
+    margin-bottom: 0px;
+  }
 }
 
 .form-field {
@@ -890,25 +980,14 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-@media screen and (max-width: 1199px) {
-  .header__container {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media screen and (max-width: 767px) {
   .header__container {
     padding-top: 10px;
     padding-bottom: 10px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .header__container {
-    -webkit-box-pack: baseline;
-        -ms-flex-pack: baseline;
-            justify-content: baseline;
   }
 }
 .header--logo:hover, .header--logo:focus {
@@ -1376,6 +1455,12 @@ img {
   border-radius: 0px 0px 4px 4px;
   -ms-flex-preferred-size: calc((100% - 30px) / 2);
       flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
 }
 @media screen and (max-width: 767px) {
   .team__item:not(:last-child) {
