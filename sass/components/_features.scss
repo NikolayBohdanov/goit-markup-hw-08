@@ -3,12 +3,21 @@
     background-color: var(--color-primary);
 
     &__list {
-        // display: flex;
-        // flex-wrap: wrap;
+        @media screen and (min-width:$tablet) {
+            display: flex;
+            flex-wrap: wrap;
+            gap:30px;
+        }
+
     }
 
     &__item {
         max-width: 450px;
+
+        @media screen and (min-width:$tablet) {
+            // max-width: 354px;
+            flex-basis: calc((100% - 30px) / 2)
+        }
     }
 
     &__item:not(:last-child) {

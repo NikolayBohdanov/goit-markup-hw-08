@@ -2,7 +2,14 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
+    @media screen and (max-width:767px) {
+        justify-content: space-between;
+    }
+    @media screen and (min-width:$desktop) {
+        width:max-content;
+        justify-content: baseline;
+    }
 
     &__menu {
         cursor: pointer;
@@ -25,6 +32,7 @@
         margin-left: auto;
         padding: 0px;
         background-color: transparent;
+        fill: currentColor;
 
         @media screen and (max-width:767px) {
             display: flex;
@@ -32,14 +40,25 @@
 
     }
 
+    &__close:hover,
+    &__close:focus {
+        color: var(--color-blue);
+    }
+
     &__list {
+        // @media screen and (max-width:767px) {
+        display: none;
 
-        // margin-left: 93px;
-        // display: flex;
-        @media screen and (max-width:767px) {
-            display: none;
-
+        // }
+        @media screen and (min-width:$tablet) {
+            display: flex;
+            margin-left: 88px;
         }
+
+        @media screen and (min-width:$tablet) {
+            margin-left: 93px;
+        }
+
 
     }
 

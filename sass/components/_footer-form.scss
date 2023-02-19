@@ -13,12 +13,18 @@
         color: var(--color-primary);
         margin-bottom: 20px;
     }
+    @media screen and (min-width:$tablet) {
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
 
 .form {
 display: block;
     @media screen and (min-width:$tablet) {
             display: flex;
+            flex-direction: column;
     }
 
     &__input {
@@ -34,7 +40,11 @@ display: block;
         color: var(--color-primary);
         background-color: transparent;
         @media screen and (min-width:$mobile) {
-            max-width: 450px;
+            max-width: 450px; 
+        }
+        @media screen and (min-width:$tablet) {
+            margin-left: auto;
+            margin-right: auto;
             
         }
     }
